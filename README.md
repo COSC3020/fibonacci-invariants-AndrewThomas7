@@ -45,3 +45,60 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+## Answer
+
+The invarient I derived for my code is the following:
+
+Array length = Recursive call number
+
+Code wise:  $Arr.length =RecursiveCallNumber$
+
+### Justification:
+
+For any loop through fib(n) we first check to see if n is less than or equal to 1 inside of our functional closure Fib_(n).(Continued) $\downarrow$
+
+``` Javascript
+function fib(n){
+    //Recursive closure to ensure arr does not change with each recursive call
+    function fib_(n,arr){
+        if(n<1){
+            arr.unshift(0)
+            console.log(arr.length)
+            return arr;
+        }
+        arr.unshift(Math.floor(FibExplict(n))) // Appends each fibbonachi value to the beggining of the list
+        return fib_(n-1,arr)
+    }
+    return fib_(n,[])
+}
+
+```
+
+This will always be untrue unless we start with the very first element of the fibbonachi sequence. Then we append the corresponding fibonachi number to the array and call again. Thus we are only ever appending one element at a time and then calling recursively again.
+
+This is true before the loop runs, in the base case we have that arr=[] and the number of recursive calls is 0. Then after the loop runs we append an element and have arr=[$a_o$] and recrusive calls =1.
+
+### Why is this a good invariant?
+
+This is a good invariant because it tells us information about the memory complexity of our algorithm. Again we are only appending one element per recursive call and by the end we have n+1 elements leaving us with something like $O(n)$ for complexity. In practical cases this would let you have an idea of how much storage your algorithm takes up and then you could decide if that fits your indivual needs or capabilities of your hardware.(Also note to count the number of recursive calls you would need a variable to incremenet every step such as whats shown below)
+
+```Javascript
+
+function fib(n){
+    //Recursive closer to ensure arr does not change with each recursive call
+    var count=0; // Recursive Call counter
+    function fib_(n,arr){
+        if(n<1){
+            arr.unshift(0);
+            console.log(arr.length);
+            return arr;
+        }
+        arr.unshift(Math.floor(FibExplict(n))) ;// Appends each fibbonachi value to the beggining of the list
+        count++;
+        return fib_(n-1,arr)
+    }
+    return fib_(n,[])
+
+}
+```
