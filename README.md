@@ -15,6 +15,24 @@ Add your code in `code.js`. Test your new function; I've provided some basic
 testing code that uses [jsverify](https://jsverify.github.io/) in
 `code.test.js`.
 
+“I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.”-Andrew Thomas
+
+## Sources
+ No.1-
+ 
+ https://www.youtube.com/watch?v=DxJe-9QU0vk- Learned about Binets formula from this video which I used to calcualte my fibbonachi numbers
+ No.2- 
+ 
+ https://www.w3schools.com/JSREF/jsref_unshift.asp -Learned about unshift here
+
+ No.3- Chat GPT Querey-'Im appending elements to an array in javascript and when i put in over 6 elements the output of my array is displayed on two lines. How can I fix this? Don't give me code'
+ 
+ -My code was displaying on two lines so I used chat to problem solve. Turned out to be a formatting issue with my terminal
+
+ 
 ## Invariant
 
 What is a good invariant for your recursive implementation of `fib()`
