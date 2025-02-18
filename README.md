@@ -32,6 +32,7 @@ suspected, charges may be filed against me without prior notice.”-Andrew Thoma
  
  -My code was displaying on two lines so I used chat to problem solve. Turned out to be a formatting issue with my terminal
 
+ No.4-https://launchschool.com/books/advanced_dsa/read/time_and_space_complexity_recursive -Used to look at some examples of complexity within recursive calls
  
 ## Invariant
 
@@ -77,7 +78,7 @@ function fib(n){
 
 This will always be untrue unless we start with the very first element of the fibbonachi sequence. Then we append the corresponding fibonachi number to the array and call again. Thus we are only ever appending one element at a time and then calling recursively again.
 
-This is true before the loop runs, in the base case we have that arr=[] and the number of recursive calls is 0. Then after the loop runs we append an element and have arr=[$a_o$] and recrusive calls =1.
+This is true before the loop runs, in the base case we have that arr=[] and the number of recursive calls is 0. Then after the loop runs we append an element and have arr=[ $a_o$ ] and recrusive calls =1.
 
 ### Why is this a good invariant?
 
