@@ -1,7 +1,4 @@
 function fib(n){
-    if(n==0){
-        return a=[0];
-    }
     function fib_(n,arr){
         var first=arr.length-1
         var second=arr.length-2
