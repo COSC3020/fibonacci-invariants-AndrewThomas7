@@ -53,7 +53,7 @@ The Invariant for my algorithm is the following:
 
 For every iteration the last element of the array is either the sum of itself and the previous element
 
-$f_n=f_n+f_{n-1}$,     $ (I)$
+$f_n=f_n+f_{n-1}$,     $(I)$
 
 or the sum of the previous two terms
 
