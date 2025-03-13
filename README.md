@@ -43,47 +43,7 @@ Hint: Think about what the "state of the world" is here and what you can say
 about it at the start of each recursive call. Your invariant must say something
 about the current recursive call.
 
-Describe your reasoning and the conclusion you've come to. Your reasoning is the
-most important part. You do not need to prove that the invariant is correct. Add
-your answer to this markdown file.
-
 # Answer
 
-The Invariant for my algorithm is the following:
-
-For every iteration the last element of the array is either the sum of itself and the previous element
-
-$f_n=f_n+f_{n-1}$,     $(I)$
-
-or the sum of the previous two terms
-
-$f_n=f_{n-1}+f_{n-2}$. $(II)$
-
-To clarify it is always one or the other and cannot be both.
-
-### An Example:
-
-For $n=3$: 
-
-*Before iteration:*  $arr=[0,1]$ which satisfies the first property $(I)$ because the last element $arr[1]=1+0$
-
-*After Iteration:* $arr=[0,1,1]$ where $arr[2]=1+0$ which satisfies the second property $(II)$.
-
-
-Next Iteration: n=2: 
-
-*Before Iteration:* $arr=[0,1,1]$ where $arr[2]=1+0$ which satisfies the second property $(II)$.
-
-*After Iteration:* $arr=[0,1,1,2]$ where $arr[3]=1+1$ which satisfies the second property $(II)$.
-
-Last Iteration: n=1:
-
-*Before Iteration:* $arr=[0,1,1,2]$ where $arr[3]=1+1$ which satisfies the second property $(II)$.
-
-*After Iteration:* $arr=[0,1,1,2,3]$ where $arr[4]=2+1$, which satisfies proeprty $(II)$
-
-Exit:
-
-Then because this property holds before and after every itertation it is an invariant for this algorithm. It also tells us that the last element cooresponds with the $nth$ iteration of the fibbonachi sequence and that the sequence is built out of it's previous elements.
-
+The Invariant which I found for my algorithm is that the fibbonachi array always has the previous two fibbonachi numbers it needs in order to get the next item in the sequence.
 
