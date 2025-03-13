@@ -15,6 +15,25 @@ Add your code in `code.js`. Test your new function; I've provided some basic
 testing code that uses [jsverify](https://jsverify.github.io/) in
 `code.test.js`.
 
+“I certify that I have listed all sources used to complete this exercise, including the use
+of any Large Language Models. All of the work is my own, except where stated
+otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is
+suspected, charges may be filed against me without prior notice.”-Andrew Thomas
+
+## Sources
+ No.1-
+ 
+ https://www.youtube.com/watch?v=DxJe-9QU0vk- Learned about Binets formula from this video which I used to calcualte my fibbonachi numbers
+ No.2- 
+ 
+ https://www.w3schools.com/JSREF/jsref_unshift.asp -Learned about unshift here
+
+ No.3- Chat GPT Querey-'Im appending elements to an array in javascript and when i put in over 6 elements the output of my array is displayed on two lines. How can I fix this? Don't give me code'
+ 
+ -My code was displaying on two lines so I used chat to problem solve. Turned out to be a formatting issue with my terminal
+
+ No.4-https://launchschool.com/books/advanced_dsa/read/time_and_space_complexity_recursive -Used to look at some examples of complexity within recursive calls
+ 
 ## Invariant
 
 What is a good invariant for your recursive implementation of `fib()`
@@ -24,6 +43,7 @@ Hint: Think about what the "state of the world" is here and what you can say
 about it at the start of each recursive call. Your invariant must say something
 about the current recursive call.
 
-Describe your reasoning and the conclusion you've come to. Your reasoning is the
-most important part. You do not need to prove that the invariant is correct. Add
-your answer to this markdown file.
+# Answer
+
+The Invariant which I found for my algorithm is that the fibbonachi array always has the previous two fibbonachi numbers it needs in order to get the next item in the sequence.
+
